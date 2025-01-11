@@ -26,7 +26,7 @@ var channels = ["@Shahilwebschat", "@ShahilWebs", "@A1BOTPROMOTER", "@GODMOD57"]
 var channelsString = channels.join(","); // Convert the array to a comma-separated string  
 
 HTTP.get({  
-  url: "<your-hosted-domain>/ChatMember.php?bot_token=" + bot.token + "&user_id=" + user.telegramid + "&chat_id=" + channelsString,  
+  url: "<your-hosted-domain>/getChatMember.php?bot_token=" + bot.token + "&user_id=" + user.telegramid + "&chat_id=" + channelsString,  
   success: "/check"  
 });
 ```
